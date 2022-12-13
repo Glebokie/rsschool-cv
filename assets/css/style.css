@@ -100,7 +100,7 @@ body {
 }
 
 .mainscreen {
-  background: url("/assets/img/IMG_6988.jpg") top/cover no-repeat;
+  background: url("./assets/img/IMG_6988.jpg") top/cover no-repeat;
   flex: 1 0 100%;
   padding: 350px 0 0 0;
   display: flex;
