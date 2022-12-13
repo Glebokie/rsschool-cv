@@ -100,7 +100,7 @@ body {
 }
 
 .mainscreen {
-  background: url("/img/IMG_6988.jpg") top/cover no-repeat;
+  background: url("/assets/img/IMG_6988.jpg") top/cover no-repeat;
   flex: 1 0 100%;
   padding: 350px 0 0 0;
   display: flex;
@@ -111,7 +111,7 @@ body {
 @media (max-width: 900px) {
   .mainscreen {
     padding: 100px 0 0 0;
-    background: url("/img/IMG_6988.jpg") top/cover no-repeat;
+    background: url("/assets/img/IMG_6988.jpg") top/cover no-repeat;
   }
 }
 @media (max-width: 600px) {
@@ -213,7 +213,7 @@ body {
 
 .content {
   text-align: center;
-  background: url("/img/IMG_7515.jpg") bottom/cover no-repeat;
+  background: url("/assets/img/IMG_7515.jpg") bottom/cover no-repeat;
 }
 
 .information {
