@@ -1,0 +1,342 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 0;
+}
+
+.mainscreen {
+  background: url("/img/IMG_6988.jpg") top/cover no-repeat;
+  flex: 1 0 100%;
+  padding: 350px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+@media (max-width: 900px) {
+  .mainscreen {
+    padding: 100px 0 0 0;
+    background: url("/img/IMG_6988.jpg") top/cover no-repeat;
+  }
+}
+@media (max-width: 600px) {
+  .mainscreen {
+    padding: 300px 0 0 0;
+    background: url("/img/IMG_6988.jpg") right/cover no-repeat;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
+}
+.mainscreen__body {
+  text-align: center;
+}
+.mainscreen__title {
+  font-size: 65px;
+  letter-spacing: 5px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 900;
+}
+@media (max-width: 900px) {
+  .mainscreen__title {
+    font-size: 35px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+}
+.mainscreen__text {
+  font-size: 26px;
+  letter-spacing: 5px;
+  line-height: 40px;
+  text-transform: lowercase;
+  color: #ffffff;
+  font-weight: 300;
+}
+@media (max-width: 900px) {
+  .mainscreen__text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.navigation {
+  padding: 50px 15px;
+  background-color: rgba(0, 0, 0, 0.7529411765);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1921568627);
+  border-top: 1px solid rgba(0, 0, 0, 0.1921568627);
+}
+.navigation__row {
+  gap: 30px;
+  font-size: 22px;
+  color: #000000;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 900px) {
+  .navigation__row {
+    font-size: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+    font-size: 35px;
+  }
+}
+@media (max-width: 600px) {
+  .navigation__row {
+    justify-content: flex-start;
+    line-height: 25px;
+    font-size: 15px;
+    text-align: justify;
+  }
+}
+.navigation__link {
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+.navigation__link a:active {
+  color: #ffffff;
+}
+.navigation__link a:link {
+  color: #ffffff;
+}
+.navigation__link a:visited {
+  color: #ffffff;
+}
+.navigation__link a:hover {
+  text-shadow: 1px 1px 10px #ffffff;
+}
+@media (max-width: 900px) {
+  .navigation__link {
+    margin: 0 5px;
+  }
+}
+
+.content {
+  text-align: center;
+  background: url("/img/IMG_7515.jpg") bottom/cover no-repeat;
+}
+
+.information {
+  padding: 2px 0 0 0;
+}
+.information__row {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 900px) {
+  .information__row {
+    flex-direction: column;
+  }
+}
+.information__column {
+  flex: 1 0 33.333%;
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  min-height: 400px;
+}
+.information__title {
+  background-color: rgba(0, 0, 0, 0.7529411765);
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 5px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 20px;
+}
+.information__text {
+  text-align: left;
+  padding: 20px 20px;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-weight: 400;
+  text-shadow: 5px 5px 10px #000000;
+}
+.information__text_summary li {
+  margin: 0 0 20px 0;
+}
+.information__text_summary li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 9px 0 0;
+}
+.information__text_list {
+  line-height: 50px;
+}
+.information__text_list li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 9px 0 0;
+}
+
+.contacts {
+  background-color: rgba(0, 0, 0, 0.7529411765);
+}
+.contacts__title {
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 5px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.contacts__text {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 20px;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  font-weight: 400;
+  text-shadow: 5px 5px 10px #000000;
+}
+.contacts__text a:active {
+  color: #ffffff;
+}
+.contacts__text a:link {
+  color: #ffffff;
+}
+.contacts__text a:visited {
+  color: #ffffff;
+}
+.contacts__text a:hover {
+  text-shadow: 1px 1px 10px #ffffff;
+}
+.contacts__text img {
+  width: 30px;
+}
+.contacts__text img:hover {
+  box-shadow: 1px 1px 10px #ffffff;
+  border-radius: 50%;
+}
+
+.footer__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__img {
+  padding: 15px;
+}
+.footer__data {
+  font-size: 20px;
+  font-weight: 900;
+  color: #000000;
+  text-shadow: 3px 3px 20px #ffffff;
+}
