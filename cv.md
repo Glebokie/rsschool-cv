@@ -18,3 +18,14 @@
 * Version-Control: Git, Github
 
 * Graphics: Figma, Canva, Photopea
+* 
+### Education
+---
+* Belarus national Technical University - Electrical Engineer/Safety Engineering
+### Courses
+---
+* Rolling Scopes School - JavaScript/Front-End
+
+### Languages
+---
+* English - A2 Pre-intermediate
